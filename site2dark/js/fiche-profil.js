@@ -82,7 +82,6 @@ function sw_red() {
     btns1.style.textShadow = "2px 2px white";
     btns2.style.textShadow = "2px 2px white";
     btns3.style.textShadow = "2px 2px white";
-
 }
 
 function sw_blue() {
@@ -138,7 +137,7 @@ function set_bg_greet() {
         // Matin
         col2.style.backgroundImage = "url('https://i.ibb.co/7vDLJFb/morning.jpg')";
         greeting.textContent = 'Bonne matinée';
-        greeting2.textContent = 'Je vous souhaite une merveilleuse journée';
+        greeting2.textContent = 'Bienvenue sur mon site de profil! Je vous souhaite une merveilleuse journée';
         plan.textContent = 'C\'est quoi le plan pour ce matin?';
     }
     else if (heures < 18) 
@@ -146,24 +145,24 @@ function set_bg_greet() {
         // Aprem
         col2.style.backgroundImage = "url('https://i.ibb.co/3mThcXc/afternoon.jpg')";
         greeting.textContent = 'Bonne après-midi';
-        greeting2.textContent = 'J\'espère que vous avez siesté';
-        plan.textContent = 'C\'est quoi le plan pour cette après-midi?';
+        greeting2.textContent = 'Bienvenue sur mon site de profil!';
+        plan.textContent = 'Vous dites "chocolatine" ou "pain au chocolat?"';
     }
     else if (heures < 23)
     {
         // Soirée
         col2.style.backgroundImage = "url('https://i.ibb.co/924T2Wv/night.jpg')";
         greeting.textContent = 'Bonne soirée';
-        greeting2.textContent = 'Que faites vous de votre soirée?';
-        plan.textContent = 'C\'est quoi le plan pour ce soir?';
+        greeting2.textContent = 'Bienvenue sur mon site de profil!';
+        plan.textContent = 'Vous dites "chocolatine" ou "pain au chocolat?"';
     }
     else
     {
         // Nuit
         col2.style.backgroundImage = "url('https://i.ibb.co/924T2Wv/night.jpg')";
         greeting.textContent = 'Bonne nuit';
-        greeting2.textContent = 'Il faut dormir cher visiteur!';
-        plan.textContent = 'Pas de plan, VRAIMENT DORMEZ';
+        greeting2.textContent = 'Bienvenue sur mon site de profil! Il faut dormir cher visiteur!';
+        plan.textContent = 'VRAIMENT DORMEZ';
     }
 }
 // Run

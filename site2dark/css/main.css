@@ -9,6 +9,7 @@ body {
     background-color:rgb(92, 92, 92);
     color: white;
     font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Sedgwick Ave Display', 'Shadows Into Light','Architects Daughter', 'Grand Hotel', 'Lobster', 'Mali', 'Mali', 'Patrick Hand', cursive; */
 }
 
 .grid-container {
@@ -32,7 +33,9 @@ body {
 }
 
     .initi {
-    font-size: 2em;
+        font-family: 'Sedgwick Ave Display', 'Shadows Into Light','Architects Daughter', 'Grand Hotel', 'Lobster', 'Mali', 'Mali', 'Patrick Hand', cursive;
+        font-size: 2em;
+        font-weight: bold;
     }
 
     .numa {
@@ -44,6 +47,7 @@ body {
     }
 
     .presenta {
+        font-family: 'Sedgwick Ave Display', 'Shadows Into Light','Architects Daughter', 'Grand Hotel', 'Lobster', 'Mali', 'Mali', 'Patrick Hand', cursive;
         font-weight: bold;
         margin-top: 0.5%;
         margin-bottom: 0.5%;
@@ -75,14 +79,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     font-size: 1.1em;
-    font-weight: bold;
-    flex-wrap: nowrap;
+    font-weight: bold ;
+    flex-wrap: wrap;
     transition-duration: 2s;
 }
 
     .mpart1 > p {
         margin-bottom: 1em;
+        text-align: center;
     }
     .light {
         max-width: 25%;
@@ -172,15 +178,15 @@ body {
     grid-row: 2 / 3;
     background-color: #21A6A6;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
     transition-duration: 2s;
 }
 
     .sm_container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
     
     .sm {
@@ -188,14 +194,13 @@ body {
         border: 3px solid black;
         border-radius: 50%;
         max-width: 70%;
-        margin-bottom: 2em;
+        justify-self: center;
     }
 
 
 .mfooter {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    /* */
     background-color: #a0f0e1;
     color: black;
     text-shadow: 0px 0px white;
@@ -221,23 +226,24 @@ body {
 }
 
 .menubot > section:hover {
-    font-size: 2em;
+    font-size: 1.8em;
     color: white;
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
 
-
-
-
-
-
-
+/* font-family: 'Sedgwick Ave Display', 'Shadows Into Light','Architects Daughter', 'Grand Hotel', 'Lobster', 'Mali', 'Mali', 'Patrick Hand', cursive;
+font-family: 'Grand Hotel', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Mali', cursive;
+font-family: 'Mali', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Shadows Into Light', cursive; */
 
 /* Test animations */
 
 .glow {
-    font-family: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
@@ -273,8 +279,96 @@ body {
 
 /* media */
 
-@media(max-width: 750px) {
+
+@media(max-width: 650px) {
+    .mheader, .mpart1, .mpart3, .mfooter {
+        font-size: 0.45em;
+    }
+
+    
+    .mpart2{
+        font-size: 0.65em;
+    }
+
+    .sm {
+        max-width: 50%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1.5fr 7fr 1.5fr;
+        grid-template-rows: 1fr 7fr 1fr;
+    }
+}
+
+@media(max-width: 750px) and (min-width: 650px) {
+    .mheader, .mpart1, .mpart3, .mfooter {
+        font-size: 0.55em;
+    }
+
+    
+    .mpart2{
+        font-size: 0.72em;
+    }
+
+    .sm {
+        max-width: 55%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1.5fr 7fr 1.5fr;
+        grid-template-rows: 1fr 7fr 1fr;
+    }
+}
+
+@media(max-width: 850px) and (min-width: 750px) {
+    .mheader, .mpart1, .mpart3, .mfooter {
+        font-size: 0.65em;
+    }
+
+    .mpart2{
+        font-size: 0.8em;
+    }
+
+
+    .grid-container {
+        grid-template-columns: 1.5fr 7fr 1.5fr;
+        grid-template-rows: 1fr 7fr 1fr;
+    }
+
+    .sm {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 1000px) and (min-width: 850px) {
     .mheader, .mpart1, .mpart2, .mpart3, .mfooter {
-        font-size: 0.6em;
+        font-size: 0.75em;
+    }
+
+    .grid-container {
+        grid-template-columns: 1.5fr 7fr 1.5fr;
+        grid-template-rows: 1fr 7fr 1fr;
+    }
+}
+
+@media(max-width: 1150px) and (min-width: 1000px) {
+    .mheader, .mpart1, .mpart2, .mpart3, .mfooter {
+        font-size: 0.85em;
+    }
+}
+
+@media(max-width: 1600px) and (min-width: 1150px){
+    .mheader, .mpart1, .mpart2, .mpart3, .mfooter {
+        font-size: 0.95em;
+    }
+}
+
+@media(max-width: 5800px) and (min-width: 1600px){
+    .mheader, .mpart1, .mpart3, .mfooter {
+        font-size: 1.2em;
+    }
+
+    .mpart2{
+        font-size: 1.55em;
     }
 }
