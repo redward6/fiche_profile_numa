@@ -13,7 +13,7 @@ body {
 }
 
 .grid-container {
-    display: grid;
+    display: grid; /*      15% 70                 */
     grid-template-columns: 1fr 7fr 1fr;
     grid-template-rows: 1fr 7fr 1fr;
     height: 100vh;
@@ -139,6 +139,11 @@ body {
     text-align: center;
     font-size: 1.5em;
     text-shadow: 0.22rem 0.22rem black;
+}
+
+.mpart2 > img {
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
     .main_img {
@@ -285,7 +290,6 @@ font-family: 'Shadows Into Light', cursive; */
         font-size: 0.45em;
     }
 
-    
     .mpart2{
         font-size: 0.65em;
     }

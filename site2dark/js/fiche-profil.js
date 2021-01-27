@@ -24,7 +24,6 @@ let button_green = document.querySelector(".bub_green");
 let button_red = document.querySelector(".bub_red");
 let button_blue = document.querySelector(".bub_blue");
 
-
 // Quand on clique sur les boutons de gauche, ça active les fonctions voulues
 button_off.addEventListener("click", bg_off);
 button_grey.addEventListener("click", sw_grey);
